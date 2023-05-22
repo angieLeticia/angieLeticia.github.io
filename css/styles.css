@@ -1,0 +1,367 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilos del encabezado */
+  header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+ /* Estilos del encabezado */
+.scroll-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #ff69b4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .scroll-btn:hover {
+    background-color: #ff1493;
+  }
+  
+  /* Estilos de la sección de biografía */
+  .bio-image {
+    float: left;
+    margin-right: 20px;
+  }
+  
+  .bio-image img {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .bio-text {
+    overflow: hidden;
+  }
+  
+  /* Estilos de la sección de experiencia y habilidades */
+  .experiencia,
+  .habilidades {
+    margin-bottom: 30px;
+  }
+  
+  /* Estilos de la sección de portafolio */
+  .proyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  /* Estilos de la sección de redes sociales */
+  .redes {
+    text-align: center;
+  }
+  
+  .redes a {
+    color: #ff69b4;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+  
+  .redes a:hover {
+    color: #ff1493;
+  }
+  
+  /* Estilos de la sección de contacto */
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #ff1493;
+  }
+  
+  /* Estilos de la sección de biografía */
+#biografia {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .bio-image {
+    flex: 0 0 40%;
+  }
+  
+  .bio-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .bio-text {
+    flex: 0 0 55%;
+    padding-left: 50px;
+  }
+  
+  .bio-text h2 {
+    color: #ff69b4;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .bio-text p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /* Estilos de la sección de Experiencia y Habilidades */
+.experiencia,
+.habilidades {
+  margin-bottom: 30px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.experiencia h3,
+.habilidades h3 {
+  color: #ff69b4;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.habilidades ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.habilidades li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.habilidades li:before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ff69b4;
+}
+
+/* Efecto de aparición gradual al hacer scroll */
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Estilos de la sección de Proyectos */
+
+/* Estilos de la sección de Portafolio */
+.seccion-portafolio {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+  }
+  
+  .seccion-portafolio h2 {
+    color: #ff69b4;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+.proyectos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .proyecto {
+    width: 45%;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+  }
+  
+  .proyecto h3 {
+    color: #ff69b4;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .proyecto p {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .proyecto a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .proyecto a:hover {
+    background-color: #e64d8f;
+  }
+  #redes-sociales {
+  background-color: #f8f8f8;
+  padding: 50px 0;
+}
+
+#redes-sociales .container {
+  text-align: center;
+}
+
+#redes-sociales h2 {
+  color: #ff69b4;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+#redes-sociales .redes a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 24px;
+  color: #ff69b4;
+  transition: color 0.3s ease;
+}
+
+#redes-sociales .redes a:hover {
+  color: #e64d8f;
+}
+#redes-sociales {
+    background-color: #f3f3f3;
+    padding: 50px 0;
+  }
+  
+  #redes-sociales .container {
+    text-align: center;
+  }
+  
+  #redes-sociales h2 {
+    color: #ff69b4;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  #redes-sociales .redes a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 24px;
+    color: #ff69b4;
+    transition: color 0.3s ease;
+  }
+  
+  #redes-sociales .redes a:hover {
+    color: #e64d8f;
+  }
+  
+  #contacto {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+  }
+  
+  #contacto .container {
+    text-align: center;
+  }
+  
+  #contacto h2 {
+    color: #ff69b4;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  #contacto .contacto-box {
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #contacto-formulario input,
+  #contacto-formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #contacto-formulario button {
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #contacto-formulario button:hover {
+    background-color: #e64d8f;
+  }
+    
+  footer {
+    background-color: #f3f3f3;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer .container {
+    font-size: 14px;
+  }
+  
+  footer p {
+    margin: 0;
+    color: #888;
+  }
+  
